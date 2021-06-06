@@ -87,14 +87,6 @@
       "email": "yourName@exemple.com",
       "emailSend": "yourName@exemple.com",
       "addedOn": "2019-12-19T03:00:00.000Z"
-    },
-    {
-      "name": "luke",
-      "email": "luke@exemple.com",
-      "urlFoto": "",
-      "emailSend": "ewew@exemple.com",
-      "addedOn": "Wed Apr 28 2021 23:24:06 GMT-0300 (Brasilia Standard Time)",
-      "id": 12
     }
   ]
 }

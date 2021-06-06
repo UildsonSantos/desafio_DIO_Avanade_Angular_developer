@@ -1,0 +1,20 @@
+<section fxLayout="colum" fxLayoutAling="center center">
+  <h1 mat-dialog-title>{{alert.titulo}}</h1>
+<div mat-dialog-content>
+  <p>{{alert.descricao}}</p>
+</div>
+<div mat-dialog-actions>
+  <button mat-raised-button
+          cdkFocusInitial
+          [color]="alert.corBtnSucesso"
+          [mat-dialog-close]="true">
+    {{alert.btnSucesso}}
+  </button>
+  <button mat-stroked-button
+          [color]="alert.corBtnCancelar"
+          [mat-dialog-close]="false"
+          *ngIf="alert.possuiBtnFechar" >
+    {{alert.btnCancelar}}
+  </button>
+</div>
+</section>
