@@ -13,12 +13,17 @@ import { AppComponent } from './app.component';
 import { ListUsersComponent } from './users/list-users/list-users.component';
 import { MaterialModule } from './shared/material/material.module';
 import { AlertComponent } from './shared/components/alert/alert.component';
+import { UserDetailComponent } from './users/user-detail/user-detail.component';
+import { FieldsModule } from './shared/components/fields/fields.module';
+import { CreateUserComponent } from './users/create-user/create-user.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ListUsersComponent,
-    AlertComponent
+    AlertComponent,
+    UserDetailComponent,
+    CreateUserComponent
   ],
   imports: [
     BrowserModule,
@@ -29,7 +34,8 @@ import { AlertComponent } from './shared/components/alert/alert.component';
     CommonModule,
     HttpClientModule,
     InfiniteScrollModule,
-    FormsModule
+    FormsModule,
+    FieldsModule
   ],
   entryComponents: [AlertComponent],
   providers: [

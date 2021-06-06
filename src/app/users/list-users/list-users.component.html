@@ -1,5 +1,5 @@
 <section>
-  <a class="buttonAct" routerLink='/cadastro' mat-raised-button color="primary" >Adicionar usuário</a>
+  <a class="buttonAct" routerLink='/create' mat-raised-button color="primary" >Adicionar usuário</a>
 </section>
 
 <div class="content" infiniteScroll
@@ -34,7 +34,7 @@
 
 
     <mat-card-actions>
-      <a class="buttonAct" routerLink='/users/detail/{{user.id}}' mat-raised-button color="primary">Editar</a>
+      <a class="buttonAct" routerLink='/user/detail/{{user.id}}' mat-raised-button color="primary">Editar</a>
       <button (click)="deleteById(user)" class="buttonAct" mat-raised-button color="warn">Excluir</button>
     </mat-card-actions>
 

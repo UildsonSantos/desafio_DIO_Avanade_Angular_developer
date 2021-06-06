@@ -1,0 +1,45 @@
+
+  <div *ngIf="user" class="detail_form">
+    <h2>{{user.name | uppercase}} Details</h2>
+
+    <form #userForm="ngForm"
+          autocomplete="on"
+          novalidate>
+
+        <mat-form-field appearance="outline" class="detail_form__field" hintLabel="Max 50 characters">
+          <mat-label>Enter your name</mat-label>
+          <input  matInput
+                  #inputName
+                  maxlength="50"
+                  name="name"
+                  [(ngModel)]="user.name"
+                  required>
+                  <mat-hint align="end">{{inputName.value?.length || 0}}/50</mat-hint>
+        </mat-form-field>
+
+
+        <mat-form-field appearance="outline" class="detail_form__field">
+          <mat-label>url photo</mat-label>
+          <input  matInput
+                  name="email"
+                  required
+                  [(ngModel)]="user.email">
+        </mat-form-field>
+
+        <mat-form-field appearance="outline" class="detail_form__field">
+          <mat-label>url photo</mat-label>
+          <input  matInput
+                  name="urlFoto"
+                  [(ngModel)]="user.urlFoto">
+        </mat-form-field>
+
+          <button  [disabled]="userForm.invalid"  (click)="save()"  mat-raised-button color="primary">Save</button>
+          <button (click)="goBack()" mat-stroked-button color="accent">Go back</button>
+
+    </form>
+
+</div>
+
+
+
+
